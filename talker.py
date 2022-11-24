@@ -4,7 +4,7 @@ from person_msgs.msg import Person
 
 rclpy.init()
 node = Node("talker")    
-pub = node.create_publisher(Persin, "person", 10)
+pub = node.create_publisher(Person, "person", 10)
 n = 0
 
 def cb():
